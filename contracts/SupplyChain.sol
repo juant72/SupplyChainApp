@@ -140,7 +140,7 @@ contract supplyChain {
             ownerships[ownership_id].productId = _prodId;
             ownerships[ownership_id].productOwner = p2.participantAddress;
             ownerships[ownership_id].ownerId = _user2Id;
-            ownerships[ownership_id].trxTimeStamp = uint32(now);
+            ownerships[ownership_id].trxTimeStamp = uint32(block.timestamp);
             products[_prodId].productOwner = p2.participantAddress;
             productTrack[_prodId].push(ownership_id);
             emit TransferOwnership(_prodId);
@@ -155,7 +155,7 @@ contract supplyChain {
             ownerships[ownership_id].productId = _prodId;
             ownerships[ownership_id].productOwner = p2.participantAddress;
             ownerships[ownership_id].ownerId = _user2Id;
-            ownerships[ownership_id].trxTimeStamp = uint32(now);
+            ownerships[ownership_id].trxTimeStamp = uint32(block.timestamp);
             products[_prodId].productOwner = p2.participantAddress;
             productTrack[_prodId].push(ownership_id);
             emit TransferOwnership(_prodId);
@@ -170,7 +170,7 @@ contract supplyChain {
             ownerships[ownership_id].productId = _prodId;
             ownerships[ownership_id].productOwner = p2.participantAddress;
             ownerships[ownership_id].ownerId = _user2Id;
-            ownerships[ownership_id].trxTimeStamp = uint32(now);
+            ownerships[ownership_id].trxTimeStamp = uint32(block.timestamp);
             products[_prodId].productOwner = p2.participantAddress;
             productTrack[_prodId].push(ownership_id);
             emit TransferOwnership(_prodId);
